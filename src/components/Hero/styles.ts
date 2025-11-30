@@ -8,7 +8,6 @@ export const Form = styled.form`
   position: relative;
   display: flex;
   align-items: center;
-  color: #eee;
 
   @media (max-width: 768px) {
     height: 250px;
@@ -21,6 +20,7 @@ export const Form = styled.form`
 
   div {
     margin: 0 auto;
+    position: relative;
   }
 
   &::before {
@@ -37,6 +37,7 @@ export const Form = styled.form`
 export const Titulo = styled.h2`
   font-family: Gloock, serif;
   font-size: 48px;
+  color: ${(props) => props.theme.corSecundaria};
 
   @media (max-width: 768px) {
     font-size: 28px;
